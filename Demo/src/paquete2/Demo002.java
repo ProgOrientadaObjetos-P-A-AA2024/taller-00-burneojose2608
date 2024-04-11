@@ -37,7 +37,11 @@ public class Demo002 {
            
         }
         
-        
+        /*
+        hacemos una printl para pedir al usuario que  ingrese un numero  tambiuen creamosl variable num
+        para guardar la  respuesta ahi y de ahi usamos un if para poder hacer la condicion donde si no ingrese del uno al 5
+        se haga todo mayuscula  y si ingresa del 1 al 5 se va apresentar de la misma manera que estab la cadena
+        */
        
        
         // usar printf;
