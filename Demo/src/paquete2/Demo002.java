@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package paquete2;
+import java.util.Scanner;
 import paquete1.Mensaje;
 import paquete3.Informacion;
 
@@ -11,7 +12,7 @@ import paquete3.Informacion;
  *
  * @author reroes
  */
-public class Demo {
+public class Demo002 {
 
     /**
      * @param args the command line arguments
@@ -23,8 +24,22 @@ public class Demo {
         con el porcentaje d y de ahi le damos un salto de linea y ponemos toda 
         la direccion de los paquetes que importamos 
         */
-        System.out.printf("%s con %d\n",Mensaje.obtenerMensaje(),
-                Informacion.obtenerHabitantes());
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("ingrese un numero para imprimir");
+        int num = entrada.nextInt();
+        if( num >= 1 && num <= 5 ){
+            System.out.printf("%s con %d\n",Mensaje.obtenerMensaje(),
+                Informacion.obtenerHabitantes()); 
+        }else{
+              System.out.printf("%s con %d\n", Mensaje.obtenerMensaje().toUpperCase(),
+                Informacion.obtenerHabitantes() ); 
+              
+           
+        }
+        
+        
+       
+       
         // usar printf;
     }
     
